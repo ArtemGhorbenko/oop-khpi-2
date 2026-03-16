@@ -1,0 +1,38 @@
+@startuml
+!pragma engine elk
+
+class Room {
+  - roomNumber: String
+  - available: boolean
+  + Room(String, boolean)
+  + Room(String)
+  + bookBy(guest: Guest): void
+  + releaseRoom(): void
+  + toString(): String
+  + equals(Object): boolean
+  + hashCode(): int
+}
+
+class StandardRoom {
+  - bedsCount: int
+  + StandardRoom(String, boolean, int)
+}
+
+class SuiteRoom {
+  - hasBalcony: boolean
+  + SuiteRoom(String, boolean, boolean)
+}
+
+class Guest {
+  - guestId: String
+  - fullName: String
+  + Guest(String, String)
+  + isVerified(): boolean
+  + toString(): String
+}
+
+Room <|-- StandardRoom : (? підтип)
+Room <|-- SuiteRoom : (? підтип)
+Room --> Guest : (? пов'язаний з)
+
+@enduml
