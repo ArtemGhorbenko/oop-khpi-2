@@ -1,5 +1,6 @@
 @startuml
-!pragma engine elk
+skinparam linetype ortho
+skinparam nodesep 100
 
 class Room {
   - roomNumber: String
@@ -31,8 +32,8 @@ class Guest {
   + toString(): String
 }
 
-Room <|-- StandardRoom : (? підтип)
-Room <|-- SuiteRoom : (? підтип)
-Room --> Guest : (? пов'язаний з)
+Room <|-- StandardRoom : є підтипом
+Room <|-- SuiteRoom : є підтипом
 
+Guest "1" -left-> "0..N" Room : бронює
 @enduml
