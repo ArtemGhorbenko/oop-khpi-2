@@ -18,7 +18,7 @@ class RoomTest {
     }
 
     @Test
-    @DisplayName("Конструктор должен правильно задавать начальное состояние")
+    @DisplayName("Конструктор має правильно ініціалізувати початковий стан")
     void constructorShouldStoreInitialState() {
         assertEquals("101", room.getRoomNumber());
         assertTrue(room.isAvailable());
@@ -26,16 +26,16 @@ class RoomTest {
     }
 
     @Test
-    @DisplayName("Метод bookBy должен делать комнату занятой и сохранять гостя")
+    @DisplayName("Метод bookBy має робити кімнату зайнятою та зберігати гостя")
     void bookByShouldChangeAvailabilityAndSetGuest() {
-        room.bookBy(guest); // Выполняем бронирование
+        room.bookBy(guest);
 
         assertFalse(room.isAvailable());
         assertEquals(guest, room.getCurrentGuest());
     }
 
     @Test
-    @DisplayName("Метод releaseRoom должен освобождать комнату и удалять гостя")
+    @DisplayName("Метод releaseRoom має звільняти кімнату та видаляти гостя")
     void releaseRoomShouldClearState() {
         room.bookBy(guest);
         room.releaseRoom();
@@ -45,7 +45,7 @@ class RoomTest {
     }
 
     @Test
-    @DisplayName("Бронирование с гостем null должно выбрасывать IllegalArgumentException")
+    @DisplayName("Бронювання порожнім гостем (null) має викидати IllegalArgumentException")
     void bookingWithNullGuestThrowsException() {
         IllegalArgumentException ex = assertThrows(
                 IllegalArgumentException.class,
@@ -55,7 +55,7 @@ class RoomTest {
     }
 
     @Test
-    @DisplayName("Бронирование уже занятой комнаты должно выбрасывать IllegalStateException")
+    @DisplayName("Бронювання вже зайнятої кімнати має викидати IllegalStateException")
     void bookingAlreadyBookedRoomThrowsException() {
         room.bookBy(guest);
         Guest anotherGuest = new Guest("G-02", "Петро Петренко");

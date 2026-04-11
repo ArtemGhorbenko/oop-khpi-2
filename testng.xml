@@ -1,0 +1,9 @@
+<suite name="HotelBookingSuite">
+    <test name="All Hotel Tests">
+        <classes>
+            <class name="ua.khpi.oop.lab04.RoomTest"/>
+            <class name="ua.khpi.oop.lab04.GuestTest"/>
+            <class name="ua.khpi.oop.lab04.StandardRoomTest"/>
+        </classes>
+    </test>
+</suite>
