@@ -1,4 +1,4 @@
-!!!Main це lab1 , lab1 Пуста я там тестував гіт хаб тому main=lab1 lab2=lab2 lab3=lab3+lab4
+!!!Main це lab1 , lab1 Пуста я там тестував гіт хаб тому main=lab1 lab2=lab2 lab3=lab3 lab4=lab4 
 
 
 # oop-khpi-2
