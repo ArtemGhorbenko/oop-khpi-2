@@ -1,0 +1,73 @@
+Index: target/classes/ua/khpi/oop/lab04/.idea/lab04.iml
+===================================================================
+diff --git a/target/classes/ua/khpi/oop/lab04/.idea/lab04.iml b/target/classes/ua/khpi/oop/lab04/.idea/lab04.iml
+new file mode 100644
+--- /dev/null	(date 1775920981310)
++++ b/target/classes/ua/khpi/oop/lab04/.idea/lab04.iml	(date 1775920981310)
+@@ -0,0 +1,9 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<module type="JAVA_MODULE" version="4">
++  <component name="NewModuleRootManager" inherit-compiler-output="true">
++    <exclude-output />
++    <content url="file://$MODULE_DIR$" />
++    <orderEntry type="inheritedJdk" />
++    <orderEntry type="sourceFolder" forTests="false" />
++  </component>
++</module>
+\ No newline at end of file
+Index: target/classes/ua/khpi/oop/lab04/.idea/.gitignore
+===================================================================
+diff --git a/target/classes/ua/khpi/oop/lab04/.idea/.gitignore b/target/classes/ua/khpi/oop/lab04/.idea/.gitignore
+new file mode 100644
+--- /dev/null	(date 1775920961397)
++++ b/target/classes/ua/khpi/oop/lab04/.idea/.gitignore	(date 1775920961397)
+@@ -0,0 +1,5 @@
++# Default ignored files
++/shelf/
++/workspace.xml
++# Editor-based HTTP Client requests
++/httpRequests/
+Index: target/classes/ua/khpi/oop/lab04/.idea/misc.xml
+===================================================================
+diff --git a/target/classes/ua/khpi/oop/lab04/.idea/misc.xml b/target/classes/ua/khpi/oop/lab04/.idea/misc.xml
+new file mode 100644
+--- /dev/null	(date 1775920981325)
++++ b/target/classes/ua/khpi/oop/lab04/.idea/misc.xml	(date 1775920981325)
+@@ -0,0 +1,6 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="ProjectRootManager" version="2" languageLevel="JDK_25" default="true" project-jdk-name="openjdk-25" project-jdk-type="JavaSDK">
++    <output url="file://$PROJECT_DIR$/out" />
++  </component>
++</project>
+\ No newline at end of file
+Index: target/classes/ua/khpi/oop/lab04/.idea/vcs.xml
+===================================================================
+diff --git a/target/classes/ua/khpi/oop/lab04/.idea/vcs.xml b/target/classes/ua/khpi/oop/lab04/.idea/vcs.xml
+new file mode 100644
+--- /dev/null	(date 1775920981327)
++++ b/target/classes/ua/khpi/oop/lab04/.idea/vcs.xml	(date 1775920981327)
+@@ -0,0 +1,6 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="VcsDirectoryMappings">
++    <mapping directory="$PROJECT_DIR$/../../../../../.." vcs="Git" />
++  </component>
++</project>
+\ No newline at end of file
+Index: target/classes/ua/khpi/oop/lab04/.idea/modules.xml
+===================================================================
+diff --git a/target/classes/ua/khpi/oop/lab04/.idea/modules.xml b/target/classes/ua/khpi/oop/lab04/.idea/modules.xml
+new file mode 100644
+--- /dev/null	(date 1775920981315)
++++ b/target/classes/ua/khpi/oop/lab04/.idea/modules.xml	(date 1775920981315)
+@@ -0,0 +1,8 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="ProjectModuleManager">
++    <modules>
++      <module fileurl="file://$PROJECT_DIR$/.idea/lab04.iml" filepath="$PROJECT_DIR$/.idea/lab04.iml" />
++    </modules>
++  </component>
++</project>
+\ No newline at end of file

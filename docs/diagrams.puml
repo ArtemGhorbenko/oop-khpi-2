@@ -1,0 +1,78 @@
+@startuml
+skinparam classAttributeIconSize 0
+
+class MedicalWorker {
+  - name: String
+  - experienceYears: int
+  + MedicalWorker(name: String, experienceYears: int)
+  + getName(): String
+  + getExperienceYears(): int
+  + addExperience(years: int): void
+  + description(): String
+}
+
+class Doctor {
+  - licenseNumber: String
+  + Doctor(name: String, experienceYears: int, licenseNumber: String)
+  + getLicenseNumber(): String
+  + description(): String
+}
+
+class Surgeon {
+  - successfulSurgeries: int
+  + Surgeon(name: String, exp: int, lic: String, surgeries: int)
+  + getSuccessfulSurgeries(): int
+  + addSurgery(): void
+  + description(): String
+}
+
+class Pediatrician {
+  - maxAgeLimit: int
+  + Pediatrician(name: String, exp: int, lic: String, maxAge: int)
+  + getMaxAgeLimit(): int
+  + description(): String
+}
+
+class CardiacSurgeon <<final>> {
+  - certificationLevel: String
+  + CardiacSurgeon(name: String, exp: int, lic: String, surg: int, cert: String)
+  + getCertificationLevel(): String
+  + description(): String
+}
+
+MedicalWorker <|-- Doctor
+Doctor <|-- Surgeon
+Doctor <|-- Pediatrician
+Surgeon <|-- CardiacSurgeon
+
+class LibraryItem {
+  - inventoryNumber: String
+  - title: String
+  - available: boolean
+}
+
+class Book {
+  - isbn: String
+  - pageCount: int
+}
+
+class Magazine {
+  - issueNumber: int
+  - year: int
+}
+
+class Newspaper {
+  - issueDate: LocalDate
+  - periodicity: String
+}
+
+class EBook {
+  - fileFormat: String
+  - fileSizeMb: double
+}
+
+LibraryItem <|-- Book
+LibraryItem <|-- Magazine
+LibraryItem <|-- Newspaper
+LibraryItem <|-- EBook
+@enduml
