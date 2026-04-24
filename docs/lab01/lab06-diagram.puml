@@ -1,0 +1,29 @@
+@startuml
+abstract class Assessment {
+  # title: String
+  # maxScore: int
+  # completed: boolean
+  + summary(): String
+  + markAsCompleted(): void
+  + {abstract} evaluate(pointsScored: int): String
+}
+
+class Exam {
+  - examinerName: String
+  + evaluate(pointsScored: int): String
+}
+
+class QuizAssessment {
+  - numberOfQuestions: int
+  + evaluate(pointsScored: int): String
+}
+
+class CourseProject {
+  - requiresPresentation: boolean
+  + evaluate(pointsScored: int): String
+}
+
+Assessment <|-- Exam
+Assessment <|-- QuizAssessment
+Assessment <|-- CourseProject
+@enduml
