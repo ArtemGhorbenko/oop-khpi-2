@@ -15,6 +15,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="UML Sequence" />
         <option value="Class" />
       </list>
     </option>
@@ -27,21 +28,21 @@
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "ArtemGhorbenko"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;ArtemGhorbenko&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/ArtemGhorbenko/oop-khpi-2.git",
-    "accountId": "be99f87e-b72d-4d3e-87cf-c67238581e5d"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/ArtemGhorbenko/oop-khpi-2.git&quot;,
+    &quot;accountId&quot;: &quot;be99f87e-b72d-4d3e-87cf-c67238581e5d&quot;
   }
-}]]></component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 5
-}]]></component>
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 5
+}</component>
   <component name="ProjectId" id="3CoaOC0QLSFUyIGLaoksHUuotTp" />
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
@@ -50,13 +51,16 @@
   "keyToString": {
     "Application.Lab05JolDemo.executor": "Run",
     "Application.Main.executor": "Run",
+    "DefaultPlantUmlFileTemplate": "UML Sequence",
+    "JUnit.ConsultationSlotTest.executor": "Run",
     "JUnit.HierarchyTest.executor": "Run",
+    "JUnit.SchedulableContractTest.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
     "RunOnceActivity.git.unshallow": "true",
     "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultAutoModeForALLUsers.v1": "true",
     "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
-    "git-widget-placeholder": "lab06",
+    "git-widget-placeholder": "lab07",
     "junie.onboarding.icon.badge.shown": "true",
     "kotlin-language-version-configured": "true",
     "project.structure.last.edited": "Modules",
@@ -77,7 +81,7 @@
       <recent name="C:\Users\user\meet-autocode-exercise\oop-khpi-2\src\test\java" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Main">
+  <component name="RunManager" selected="JUnit.ConsultationSlotTest">
     <configuration name="Lab05JolDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ua.khpi.oop.lab05.demo.Lab05JolDemo" />
       <module name="lab05-inheritance" />
@@ -104,8 +108,40 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ConsultationSlotTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="lab05-inheritance" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ua.khpi.oop.lab07.model.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ua.khpi.oop.lab07.model" />
+      <option name="MAIN_CLASS_NAME" value="ua.khpi.oop.lab07.model.ConsultationSlotTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SchedulableContractTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="lab05-inheritance" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ua.khpi.oop.lab07.model.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ua.khpi.oop.lab07.model" />
+      <option name="MAIN_CLASS_NAME" value="ua.khpi.oop.lab07.model.SchedulableContractTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ConsultationSlotTest" />
+        <item itemvalue="JUnit.SchedulableContractTest" />
         <item itemvalue="Application.Main" />
         <item itemvalue="Application.Lab05JolDemo" />
       </list>
