@@ -52,7 +52,10 @@
     "Application.Lab05JolDemo.executor": "Run",
     "Application.Main.executor": "Run",
     "Application.ua.khpi.oop.lab08.demo.Main.executor": "Run",
+    "Application.ua.khpi.oop.lab10.demo.Main.executor": "Run",
     "DefaultPlantUmlFileTemplate": "UML Sequence",
+    "JUnit.BookingContainerTest.executor": "Run",
+    "JUnit.BookingGenericsTest.executor": "Run",
     "JUnit.CampusFileManagerTest.executor": "Run",
     "JUnit.ConsultationSlotTest.executor": "Run",
     "JUnit.HierarchyTest.executor": "Run",
@@ -62,7 +65,7 @@
     "RunOnceActivity.git.unshallow": "true",
     "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultAutoModeForALLUsers.v1": "true",
     "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
-    "git-widget-placeholder": "lab09",
+    "git-widget-placeholder": "lab10",
     "junie.onboarding.icon.badge.shown": "true",
     "kotlin-language-version-configured": "true",
     "project.structure.last.edited": "Modules",
@@ -82,8 +85,11 @@
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\user\meet-autocode-exercise\oop-khpi-2\src\test\java" />
     </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="ua.khpi.oop.lab10" />
+    </key>
   </component>
-  <component name="RunManager" selected="JUnit.BookingGenericsTest">
+  <component name="RunManager" selected="Application.ua.khpi.oop.lab10.demo.Main">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ua.khpi.oop.lab06.demo.Main" />
       <module name="lab05-inheritance" />
@@ -110,16 +116,29 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BookingGenericsTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ua.khpi.oop.lab10.demo.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ua.khpi.oop.lab10.demo.Main" />
       <module name="lab05-inheritance" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ua.khpi.oop.lab09.*" />
+          <option name="PATTERN" value="ua.khpi.oop.lab10.demo.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="ua.khpi.oop.lab09" />
-      <option name="MAIN_CLASS_NAME" value="ua.khpi.oop.lab09.BookingGenericsTest" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BookingContainerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="lab05-inheritance" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ua.khpi.oop.lab10.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ua.khpi.oop.lab10" />
+      <option name="MAIN_CLASS_NAME" value="ua.khpi.oop.lab10.BookingContainerTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -140,28 +159,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ConsultationSlotTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="lab05-inheritance" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="ua.khpi.oop.lab07.model.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="ua.khpi.oop.lab07.model" />
-      <option name="MAIN_CLASS_NAME" value="ua.khpi.oop.lab07.model.ConsultationSlotTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.BookingGenericsTest" />
+        <item itemvalue="Application.ua.khpi.oop.lab10.demo.Main" />
+        <item itemvalue="JUnit.BookingContainerTest" />
         <item itemvalue="JUnit.CampusFileManagerTest" />
         <item itemvalue="Application.ua.khpi.oop.lab08.demo.Main" />
         <item itemvalue="Application.Main" />
-        <item itemvalue="JUnit.ConsultationSlotTest" />
       </list>
     </recent_temporary>
   </component>
