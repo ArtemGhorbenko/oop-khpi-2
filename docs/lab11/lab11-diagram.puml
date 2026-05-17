@@ -1,0 +1,39 @@
+@startuml
+class Developer {
+  - id: String
+  - name: String
+  + getId(): String
+  + getName(): String
+  + equals(obj: Object): boolean
+  + hashCode(): int
+}
+
+class Task {
+  - taskId: String
+  - description: String
+  - assignee: Developer
+  + getTaskId(): String
+  + getDescription(): String
+  + getAssignee(): Developer
+  + setAssignee(assignee: Developer): void
+  + equals(obj: Object): boolean
+  + hashCode(): int
+}
+
+class Sprint {
+  - team: Set<Developer>
+  - backlog: Queue<Task>
+  - activeTasks: List<Task>
+  + addDeveloper(developer: Developer): void
+  + addTaskToBacklog(task: Task): void
+  + assignNextTask(developer: Developer): Task
+  + completeTask(taskId: String): boolean
+  + getTeam(): Set<Developer>
+  + getBacklog(): Queue<Task>
+  + getActiveTasks(): List<Task>
+}
+
+Sprint o-- Developer : "team"
+Sprint o-- Task : "backlog, activeTasks"
+Task --> Developer : "assignee"
+@enduml
