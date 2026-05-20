@@ -1,0 +1,25 @@
+@startuml
+class ClassRecord {
+  - dayOfWeek: String
+  - classNumber: int
+  - time: String
+  - room: String
+  - teacher: String
+}
+
+class ScheduleReport {
+  - totalValidRecords: int
+  - totalErrors: int
+}
+
+class ScheduleProcessor {
+  - SCHEDULE_PATTERN: Pattern
+  + normalizeWhitespace(line: String): String
+  + parseLine(rawLine: String): ClassRecord
+  + parseLines(rawLines: List<String>, errorLog: List<String>): List<ClassRecord>
+  + buildReport(records: List<ClassRecord>, errorLog: List<String>): String
+}
+
+ScheduleProcessor --> ClassRecord : "creates"
+ScheduleProcessor --> ScheduleReport : "creates"
+@enduml
