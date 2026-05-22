@@ -1,25 +1,42 @@
 @startuml
-class ClassRecord {
-  - dayOfWeek: String
-  - classNumber: int
-  - time: String
-  - room: String
-  - teacher: String
+class Product {
+  - id: String
+  - name: String
+  - price: double
+  - isVerified: boolean
 }
 
-class ScheduleReport {
-  - totalValidRecords: int
-  - totalErrors: int
+class Order {
+  - orderId: String
+  - products: List<Product>
+  - isProcessed: boolean
 }
 
-class ScheduleProcessor {
-  - SCHEDULE_PATTERN: Pattern
-  + normalizeWhitespace(line: String): String
-  + parseLine(rawLine: String): ClassRecord
-  + parseLines(rawLines: List<String>, errorLog: List<String>): List<ClassRecord>
-  + buildReport(records: List<ClassRecord>, errorLog: List<String>): String
+class Invoice {
+  - invoiceId: String
+  - orderId: String
+  - totalAmount: double
 }
 
-ScheduleProcessor --> ClassRecord : "creates"
-ScheduleProcessor --> ScheduleReport : "creates"
+class StoreService {
+  + calculateOrderTotal(order: Order): double
+  + generateInvoice(order: Order): Invoice
+}
+
+class ProductVerificationThread extends Thread {
+  - products: List<Product>
+  + run(): void
+}
+
+class OrderProcessingTask implements Runnable {
+  - orders: List<Order>
+  - storeService: StoreService
+  - generatedInvoices: List<Invoice>
+  + run(): void
+}
+
+OrderProcessingTask --> StoreService
+OrderProcessingTask --> Order
+OrderProcessingTask --> Invoice
+ProductVerificationThread --> Product
 @enduml

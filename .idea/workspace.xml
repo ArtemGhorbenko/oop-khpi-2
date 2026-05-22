@@ -47,41 +47,43 @@
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.Lab05JolDemo.executor": "Run",
-    "Application.Main.executor": "Run",
-    "Application.ua.khpi.oop.lab08.demo.Main.executor": "Run",
-    "Application.ua.khpi.oop.lab10.demo.Main.executor": "Run",
-    "DefaultPlantUmlFileTemplate": "UML Sequence",
-    "JUnit.BookingContainerTest.executor": "Run",
-    "JUnit.BookingGenericsTest.executor": "Run",
-    "JUnit.CampusFileManagerTest.executor": "Run",
-    "JUnit.ConsultationSlotTest.executor": "Run",
-    "JUnit.HierarchyTest.executor": "Run",
-    "JUnit.OrderManagerTest.executor": "Run",
-    "JUnit.SchedulableContractTest.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultAutoModeForALLUsers.v1": "true",
-    "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
-    "git-widget-placeholder": "lab13",
-    "junie.onboarding.icon.badge.shown": "true",
-    "kotlin-language-version-configured": "true",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "to.speed.mode.migration.done": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.Lab05JolDemo.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
+    &quot;Application.ua.khpi.oop.lab08.demo.Main.executor&quot;: &quot;Run&quot;,
+    &quot;Application.ua.khpi.oop.lab10.demo.Main.executor&quot;: &quot;Run&quot;,
+    &quot;DefaultPlantUmlFileTemplate&quot;: &quot;UML Sequence&quot;,
+    &quot;JUnit.BookingContainerTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.BookingGenericsTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.CampusFileManagerTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ConsultationSlotTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.HierarchyTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.OrderManagerTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.SchedulableContractTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ScheduleProcessorTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.StoreServiceTest.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultAutoModeForALLUsers.v1&quot;: &quot;true&quot;,
+    &quot;com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;lab14&quot;,
+    &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;to.speed.mode.migration.done&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "GitStage.ChangesTree.GroupingKeys": [
-      "directory",
-      "module",
-      "repository"
+  &quot;keyToStringList&quot;: {
+    &quot;GitStage.ChangesTree.GroupingKeys&quot;: [
+      &quot;directory&quot;,
+      &quot;module&quot;,
+      &quot;repository&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\user\meet-autocode-exercise\oop-khpi-2\src\test\java" />
@@ -90,7 +92,20 @@
       <recent name="ua.khpi.oop.lab10" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.ScheduleProcessorTest">
+  <component name="RunManager" selected="Application.Main">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ua.khpi.oop.lab14.demo.Main" />
+      <module name="lab05-inheritance" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ua.khpi.oop.lab14.demo.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="ua.khpi.oop.lab10.demo.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ua.khpi.oop.lab10.demo.Main" />
       <module name="lab05-inheritance" />
@@ -100,36 +115,6 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="BookingContainerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="lab05-inheritance" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="ua.khpi.oop.lab10.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="ua.khpi.oop.lab10" />
-      <option name="MAIN_CLASS_NAME" value="ua.khpi.oop.lab10.BookingContainerTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="CampusFileManagerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="lab05-inheritance" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="ua.khpi.oop.lab08.persistence.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="ua.khpi.oop.lab08.persistence" />
-      <option name="MAIN_CLASS_NAME" value="ua.khpi.oop.lab08.persistence.CampusFileManagerTest" />
-      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -164,13 +149,28 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="StoreServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="lab05-inheritance" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ua.khpi.oop.lab14.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ua.khpi.oop.lab14" />
+      <option name="MAIN_CLASS_NAME" value="ua.khpi.oop.lab14.StoreServiceTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main" />
+        <item itemvalue="JUnit.StoreServiceTest" />
         <item itemvalue="JUnit.ScheduleProcessorTest" />
         <item itemvalue="JUnit.OrderManagerTest" />
         <item itemvalue="Application.ua.khpi.oop.lab10.demo.Main" />
-        <item itemvalue="JUnit.BookingContainerTest" />
-        <item itemvalue="JUnit.CampusFileManagerTest" />
       </list>
     </recent_temporary>
   </component>
