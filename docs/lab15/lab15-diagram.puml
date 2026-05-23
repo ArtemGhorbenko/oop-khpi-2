@@ -1,0 +1,23 @@
+@startuml
+class HotelRoom {
+  - roomId: String
+  - capacity: int
+  - bookedSeats: int
+  + bookUnsafe(amount: int): boolean
+  + bookSafe(amount: int): boolean
+}
+
+class BookingRequest {
+  - guestName: String
+  - seatsToBook: int
+}
+
+class BookingTask implements Runnable {
+  - room: HotelRoom
+  - iterations: int
+  - useSafeMethod: boolean
+  + run(): void
+}
+
+BookingTask --> HotelRoom : "modifies shared resource"
+@enduml
