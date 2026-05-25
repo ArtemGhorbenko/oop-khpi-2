@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="ua.khpi.oop.lab16.MeanCalculatorTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2026-05-25T21:07:27.972Z" hostname="WIN-5UTREUPO09J" time="0.014">
+  <properties/>
+  <testcase name="javaAndNativeResultsAreEqual()" classname="ua.khpi.oop.lab16.MeanCalculatorTest" time="0.009"/>
+  <testcase name="testBoundaryCases()" classname="ua.khpi.oop.lab16.MeanCalculatorTest" time="0.001"/>
+  <testcase name="nativeImplementationCalculatesMean()" classname="ua.khpi.oop.lab16.MeanCalculatorTest" time="0.001"/>
+  <testcase name="javaImplementationCalculatesMean()" classname="ua.khpi.oop.lab16.MeanCalculatorTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

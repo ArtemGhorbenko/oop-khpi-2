@@ -1,0 +1,42 @@
+name: Java JNI CI
+
+on:
+  push:
+    branches: [ "lab16", "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  build-and-test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up JDK 21
+        uses: actions/setup-java@v4
+        with:
+          distribution: 'temurin'
+          java-version: '21'
+
+      - name: Ensure gradlew is executable
+        run: chmod +x gradlew
+
+      - name: Generate JNI headers
+        run: |
+          mkdir -p native-headers build/classes/java/main
+          javac -h native-headers -d build/classes/java/main src/main/java/ua/khpi/oop/lab16/NativeMeanCalculator.java
+
+      - name: Build native library
+        run: |
+          mkdir -p build/native
+          clang++ -std=c++17 -shared -fPIC \
+          -I"$JAVA_HOME/include" \
+          -I"$JAVA_HOME/include/linux" \
+          -Inative-headers \
+          native/nativecalc.cpp \
+          -o build/native/libnativecalc.so
+
+      - name: Run tests
+        run: ./gradlew test
