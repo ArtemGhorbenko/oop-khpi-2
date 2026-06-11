@@ -1,0 +1,41 @@
+@startuml
+skinparam linetype ortho
+skinparam nodesep 80
+
+class Room {
+  - roomNumber: String
+  - available: boolean
+  - currentGuest: Guest
+  + Room(String, boolean)
+  + Room(String)
+  + bookBy(guest: Guest): void
+  + releaseRoom(): void
+  + getCurrentGuest(): Guest
+  + toString(): String
+  + equals(Object): boolean
+  + hashCode(): int
+}
+
+class StandardRoom {
+  - bedsCount: int
+  + StandardRoom(String, boolean, int)
+}
+
+class SuiteRoom {
+  - hasBalcony: boolean
+  + SuiteRoom(String, boolean, boolean)
+}
+
+class Guest {
+  - guestId: String
+  - fullName: String
+  + Guest(String, String)
+  + isVerified(): boolean
+  + toString(): String
+}
+
+Room <|-- StandardRoom : генералізація
+Room <|-- SuiteRoom : генералізація
+
+Room "0..N" --> "0..1" Guest : асоціація (поточний гість)
+@enduml
